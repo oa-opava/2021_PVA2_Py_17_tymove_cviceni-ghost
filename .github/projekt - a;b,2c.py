@@ -5,6 +5,6 @@ rodnecislo = input("Zadej rodné cislo")
 
 def jeSpravne(rodnecislo):
     if (re.fullmatch(regex, rodnecislo)):
-        print("správně")
+        print("True")
     else:
-        print("nesprávně")
+        print("false")
