@@ -1,10 +1,10 @@
-#1
+#1-a;b
 import re
-regex = "[0-9]{2}[01-12][0-3][0-9][0-9]{3}[0-9]"
+regex = "[0-9]{6}[0-9]{4}"
 rodnecislo = input("Zadej rodné cislo")
 
-def jeSpravne():
-    if re.fullmatch(regex, rodnecislo):
+def jeSpravne(rodnecislo):
+    if (re.fullmatch(regex, rodnecislo)):
         print("správně")
     else:
         print("nesprávně")
